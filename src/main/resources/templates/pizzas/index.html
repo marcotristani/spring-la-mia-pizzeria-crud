@@ -8,7 +8,7 @@
   <body>
     <h1>Pizza</h1>
     <div th:each="pizza : ${pizzas}">
-      <h1>[[${pizza.nome}]]</h1>
+      <a th:href="@{|pizzas/${pizza.id}|}"> [[${pizza.nome}]]</a>
     </div>
   </body>
 </html>
