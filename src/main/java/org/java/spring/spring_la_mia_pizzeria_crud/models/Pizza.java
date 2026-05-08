@@ -81,6 +81,6 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return this.nome;
+        return String.format("%s, %.2f ,\n %s", nome, price, description);
     }
 }
